@@ -1,5 +1,4 @@
 let botao = document.querySelector(".botao-gerar");
-let chaveGroq = "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"
 let endereco = "https://api.groq.com/openai/v1/chat/completions"
 
 
@@ -12,7 +11,7 @@ async function gerarCodigo() {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer " + chaveGroq
+            "Authorization": "Bearer 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" 
         },
         body: JSON.stringify({
             model: "groq/compound-mini",
